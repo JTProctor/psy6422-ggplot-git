@@ -3,7 +3,7 @@ library(dplyr)
 
 data("iris")
 
-ggplot(data = iris, aes(x = Petal.Width, y = Petal.Length, colour = Species)) +
+ggplot(data = iris, aes(x = Petal.Width, y = Petal.Length, colour = Species, shape = Species)) +
   geom_point() +
   labs(
     title = "Iris Petal Dimensions by Species",
